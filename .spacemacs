@@ -346,6 +346,12 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (global-set-key [?\C-h] 'delete-backward-char)
   (global-set-key [?\C-x ?h] 'help-command)
+
+  ;; Set modifier keys
+  (setq mac-option-modifier 'super) ;; Bind meta to ALT
+  (setq mac-command-modifier 'meta) ;; Bind apple/command to super if you want
+  (setq mac-function-modifier 'hyper) ;; Bind function key to hyper if you want
+  (setq mac-right-command-modifier 'meta) ;; unbind right key for accented input
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
